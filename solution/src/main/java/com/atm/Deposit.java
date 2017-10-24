@@ -14,6 +14,7 @@ public class Deposit extends Transaction{
 		//Add your code here
 		Account account = this.getBankData().getAccount(this.getAccountNum());
 		account.credit(this.amount);
+		System.out.println("Credit");
 	}
 
 }
